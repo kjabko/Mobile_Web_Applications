@@ -1,0 +1,131 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery Mobile Web App</title>
+<link href="jquery.mobile-1.4.2.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+
+
+   <!--handlers that will go into a js file later-->
+<script type="text/javascript">
+
+function setupPages(){
+
+$(function(){
+
+<!--******************************************Search iTunes Function**********************************************************************************-->
+// This function takes the user inputed search text and implemets the iTunes search API
+$('#searchButton').bind("click", function(){
+window.alert("here ");
+	$('#searchInput').val = "";
+	var searchText=$('#searchInput').val();
+	var url = "http://itunes.apple.com/search?term="+searchText+"&limit=25&media=music&callback=?"
+	var counterId = 0;
+	//$('#page5Text').attr('innerHTML','');
+	$.mobile.showPageLoadingMsg("a","loading");
+	jQuery.getJSON(url,function(data){
+	console.log(data);
+		
+		$.each(data.results, function(i,item){		
+			$("#searchPageList").append('<li class="ui-state-default" id=""><a href="#"><h4>'+item.artistName+ ' </h4>'+'<p> '+item.trackName+'</p></a><a href="#">Add to playlist</a></li>');	
+		counterId++;
+		$('#searchPageList').listview( 'refresh' );	
+	});		
+	$.mobile.hidePageLoadingMsg()
+	});	
+});
+
+
+<!-- flickrbutton is the id of the search button. When its clicked this code is activated. -->
+$('#flickrButton').bind("click", function(){
+
+<!-- create a variable called inputText, assign the contents of flickrInput box
+var inputText=$('#flickrInput').val();
+
+<!-- json is a encoding schema that allows data be transfered between computer systems. Here i am asking the flickr API to return a json encoded
+<!-- list of results which match the inputText
+$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
+{
+ tags: inputText,
+  tagmode: "any",
+  format: "json",},
+function(data) {
+//console.log(data);
+
+<!-- this is a loop to place 20 results into our html
+  $.each(data.items, function(i,item){
+  
+    $("<img>").attr("src", item.media.m).appendTo("#flickrPageList");
+
+   if ( i == 20 ) return false;
+  });
+});
+});
+});
+}
+<!--****************************************************************************************************************************--
+
+
+</script>
+
+<script src="jquery.mobile-1.2.0.min.js" type="text/javascript"></script>
+
+</head> 
+
+
+
+<body onLoad="setupPages()">
+
+<!--************************************************ITUNES HTML BELOW THIS COMMENT********************************************************************-->
+<div data-role = "page" id = "itunes">
+<div data-role = "header" data-position="fixed">
+	<h1>Finder</h1>			
+			
+	
+	<input type="text" id="searchInput" value="Search.."/>
+		<a id="searchButton" data-role="button">Go Search</a>	
+		</div>
+	<div data-role = "content">
+			<ul data-role = "listview" id = "searchPageList" data-theme = "a" data-split-icon ="star" data-split-theme = "d">
+			</ul>
+	</div>	
+	<div data-role = "footer" data-id = "home" data-position="fixed">
+	<div data-role = "navbar">
+				<ul data-theme = "a">
+					
+					
+					<li><a href = "#itunes"class="ui-btn-active">Search Itunes</a></li>
+					<li><a href = "#flickr"class="ui-btn-active">Search flickr</a></li>
+				</ul>
+			</div>
+		<h4>Search iTunes</h4>
+	</div>
+</div>	
+<!--************************************************Flickr HTML BELOW THIS COMMENT********************************************************************-->
+<div data-role = "page" id = "flickr">
+<div data-role = "header" data-position="fixed">
+	<h1>Finder</h1>			
+			
+	
+	<input type="text" id="flickrInput" value="Search.."/>
+		<a id="flickrButton" data-role="button">Go Search</a>	
+		</div>
+	<div id="pics">
+			<ul id = "flickrPageList" >
+			</ul>
+	</div>	
+	<div data-role = "footer" data-id = "home" data-position="fixed">
+	<div data-role = "navbar">
+				<ul data-theme = "a">
+					
+					
+					<li><a href = "#itunes"class="ui-btn-active">Search Itunes</a></li>
+					<li><a href = "#flickr"class="ui-btn-active">Search flickr</a></li>
+				</ul>
+			</div>
+		<h4>Search Flicker</h4>
+	</div>
+</div>
+</body>
+</html>
