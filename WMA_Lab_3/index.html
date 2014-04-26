@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.css"/>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.js"></script>
+	<script>
+
+	$(document).ready(function(){
+	$.ajax({
+		type: "GET",
+		url: "lolcatz.xml",
+		dataType: "xml",
+        success: xmlParser
+        });
+});
+        function xmlParser(data){
+ 	 	console.log("here");
+		xml = data;
+	
+// the .each iterates through every 'Kitteh' in the xml file. It places the name, url and id into variables name, src and id.	
+	$(xml).find("kitteh").each(function(){
+	kitteh = $(this);
+	var name= $(kitteh).find("name").text();
+	var src= $(kitteh).find("url").text();
+	var id= $(kitteh).find("id").text();
+	//console.log(name);
+// here we are appending list elements to the UL catlist- see html below, notice how we embed the a tag. This is trick syntax to remember, needs 
+// to be practiced and examined
+	$("#catList").append('<li class="ui-state-default" id=""><a href="#cat'+ id +'"><h1>' + name + '</h1></a></li>').trigger("create").listview("refresh");
+
+
+// next we are appending data-role pages into a div i created called all pages. It is like a wrapper div for all the data-role pages.	
+	$("#allPages").append('<div data-role="page" id ="cat'+id+'"><div data-role="header"><h1>'+name+'</h1></div><div data-role="content"><p>'+name+'</p><img src="'+src+'"></div><div data-role="footer"><a href = "#page1">Home</a></div></div>');
+	});
+	
+	}
+
+</script>
+
+	<title>lolcatz</title>
+
+
+<body>
+<div id= "allPages">
+<div data-role="page" id = "page1">
+	<div data-role="header">
+		<h1>Cats</h1>
+	</div>
+	<div data-role="content">
+		
+		<div class = "primary-content">
+			<div data-demo-html="true">
+				<ul data-role= "listview" id="catList" data-filter="true" data-filter-reveal="true">						
+				
+				</ul>
+				
+			</div>
+		
+		</div>
+							
+	</div>
+	<div data-role="footer">
+		<h1>This is a footer - Cats</h1>
+		
+	</div>
+</div>
+
+</div>
+
+
+
+</div>
+
+</body>
+</html>
