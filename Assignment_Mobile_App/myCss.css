@@ -1,4 +1,4 @@
-h1 {font-size: 20px!important;}
+
 .ui-icon-home {background-color:#000000;}
 .ui-btn-left {border-radius: 0px !important; width:50px;}
 
@@ -9,7 +9,7 @@ img {margin-top: 10px;}
 .ui-footer {background-color: #000000!important;}
 .ui-link {background-color: orange!important; color: #000000!important;}
 
-.ui-header .ui-btn {margin-top: 5px!important; height: 20px!important;}
+
  iframe, object, embed {max-width: 100%;}
 p {text-align: center;}
 p .ui-link {background-color: transparent!important; color: orange!important; text-decoration: none!important;}
