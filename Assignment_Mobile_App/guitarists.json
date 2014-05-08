@@ -1,73 +1,18 @@
 {
 	"artist1":{
-	"id":"martino",
+	"id":"metheny",
 	"first_name":"Pat",
-	"last_name":"Martino",
-	"image":"pics/pat_martino.png",
+	"last_name":"Metheny",
+	"image":"pics/pat_metheny.jpg",
 	"music":[
-		{
+				{
 			"number":1,
-			"track":"You Never Told Me",
-			"album":"All Over the Place",
-			"time":"6:18",
-			"picture":"pics/all_over_the_place.jpg",
-			"url":"https://www.youtube.com/watch?v=5JMevM2rjsI",
-			"date":2012
-		},
-		{
-			"number":2,
-			"track":"KT",
-			"album":"Who Let the Cats Out",
-			"time":"7:57",
-			"picture":"pics/who_let_the_cats_out.jpg",
-			"url":"https://www.youtube.com/watch?v=IqpSvK1Vers",
-			"date":2006		
-		},
-
-		{
-			"number":3,
-			"track":"Chromazone",
-			"album":"Time In Place",
-			"time":"6:04",
-			"picture":"pics/time_in_place.jpg",
-			"url":"https://www.youtube.com/watch?v=qGkA3doBMZM",
-			"date":2005
-		},
-		{
-			"number":4,
-			"track":"Big Neighborhood",
-			"album":"Big Neighborhood",
-			"time":"7:35",
-			"picture":"pics/big_neighborhood.jpg",
-			"url":"https://www.youtube.com/watch?v=danAY7zuZBU",
-			"date":2009
-		},
-		{
-			"number":5,
-			"track":"Paris Concert",
-			"album":"Paris Concert",
-			"time":"1:20:19",
-			"picture":"pics/paris_concert.jpg",
-			"url":"https://www.youtube.com/watch?v=pKumdjSkaec",
-			"date":2011
-		}
-				]
-	},
-	
-"aritst2":{
-	"id":"burrell",
-	"first_name":"Kenny",
-	"last_name":"Burrell",
-	"image":"pics/kenny_burrell.jpg",
-	"music":[
-		{
-			"number":1,
-			"track":"Sign Of The Season",
-			"album":"Kin",
-			"time":"10:10",
-			"picture":"pics/kin.jpg",
-			"url":"https://www.youtube.com/watch?v=xH-HQJwo0o4",
-			"date":2014
+			"track":"Are You Going with Me",
+			"album":"Offramp",
+			"time":"8:52",
+			"picture":"pics/offramp.jpg",
+			"url":"jmAgBETrIPg",
+			"date":1999
 		},
 		{
 			"number":2,
@@ -75,7 +20,7 @@
 			"album":"Bright Size Life",
 			"time":"4:54",
 			"picture":"pics/bright_size_life.jpg",
-			"url":"https://www.youtube.com/watch?v=oV52_eoJCjo",
+			"url":"oV52_eoJCjo",
 			"date":2000		
 		},
 
@@ -85,7 +30,7 @@
 			"album":"Letter From Home",
 			"time":"6:26",
 			"picture":"pics/letter_from_home.jpg",
-			"url":"https://www.youtube.com/watch?v=LEGCzNFWsNM",
+			"url":"LEGCzNFWsNM",
 			"date":1989
 		},
 		{
@@ -94,17 +39,73 @@
 			"album":"First Circle",
 			"time":"9:17",
 			"picture":"pics/first_circle.jpg",
-			"url":"https://www.youtube.com/watch?v=LrHxOqMrt6M",
+			"url":"LrHxOqMrt6M",
 			"date":1984
 		},
 		{
 			"number":5,
-			"track":"Are You Going with Me",
-			"album":"Offramp",
-			"time":"8:52",
-			"picture":"pics/offramp.jpg",
-			"url":"https://www.youtube.com/watch?v=jmAgBETrIPg",
-			"date":1999
+			"track":"Sign Of The Season",
+			"album":"Kin",
+			"time":"10:10",
+			"picture":"pics/kin.jpg",
+			"url":"xH-HQJwo0o4",
+			"date":2014
+		}
+
+				]
+	},
+	
+"aritst2":{
+	"id":"stern",
+	"first_name":"Mike",
+	"last_name":"Stern",
+	"image":"pics/mike.jpg",
+	"music":[
+		{
+			"number":1,
+			"track":"You Never Told Me",
+			"album":"All Over the Place",
+			"time":"6:18",
+			"picture":"pics/all_over_the_place.jpg",
+			"url":"5JMevM2rjsI",
+			"date":2012
+		},
+		{
+			"number":2,
+			"track":"KT",
+			"album":"Who Let the Cats Out",
+			"time":"7:57",
+			"picture":"pics/who_let_the_cats_out.jpg",
+			"url":"IqpSvK1Vers",
+			"date":2006		
+		},
+
+		{
+			"number":3,
+			"track":"Chromazone",
+			"album":"Time In Place",
+			"time":"6:04",
+			"picture":"pics/time_in_place.jpg",
+			"url":"qGkA3doBMZM",
+			"date":2005
+		},
+		{
+			"number":4,
+			"track":"Big Neighborhood",
+			"album":"Big Neighborhood",
+			"time":"7:35",
+			"picture":"pics/big_neighborhood.jpg",
+			"url":"danAY7zuZBU",
+			"date":2009
+		},
+		{
+			"number":5,
+			"track":"Paris Concert",
+			"album":"Paris Concert",
+			"time":"1:20:19",
+			"picture":"pics/paris_concert.jpg",
+			"url":"pKumdjSkaec",
+			"date":2011
 		}
 				]
 	},
@@ -120,7 +121,7 @@
 			"album":"Kin",
 			"time":"10:10",
 			"picture":"pics/kin.jpg",
-			"url":"https://www.youtube.com/watch?v=xH-HQJwo0o4",
+			"url":"xH-HQJwo0o4",
 			"date":2014
 		},
 		{
@@ -129,7 +130,7 @@
 			"album":"Bright Size Life",
 			"time":"4:54",
 			"picture":"pics/bright_size_life.jpg",
-			"url":"https://www.youtube.com/watch?v=oV52_eoJCjo",
+			"url":"oV52_eoJCjo",
 			"date":2000		
 		},
 
@@ -139,7 +140,7 @@
 			"album":"Letter From Home",
 			"time":"6:26",
 			"picture":"pics/letter_from_home.jpg",
-			"url":"https://www.youtube.com/watch?v=LEGCzNFWsNM",
+			"url":"LEGCzNFWsNM",
 			"date":1989
 		},
 		{
@@ -148,7 +149,7 @@
 			"album":"First Circle",
 			"time":"9:17",
 			"picture":"pics/first_circle.jpg",
-			"url":"https://www.youtube.com/watch?v=LrHxOqMrt6M",
+			"url":"LrHxOqMrt6M",
 			"date":1984
 		},
 		{
@@ -157,25 +158,24 @@
 			"album":"Offramp",
 			"time":"8:52",
 			"picture":"pics/offramp.jpg",
-			"url":"https://www.youtube.com/watch?v=jmAgBETrIPg",
+			"url":"jmAgBETrIPg",
 			"date":1999
 		}
 				]
 	},
 
 	"artist4":{
-	"id":"stern",
-	"first_name":"Mike",
-	"last_name":"Stern",
-	"image":"pics/mike.jpg",
-	"music":[
+	"id":"martino",
+    "first_name":"Pat",
+    "last_name":"Martino",
+    "image":"pics/pat_martino.png","music":[
 		{
 			"number":1,
 			"track":"You Never Told Me",
 			"album":"All Over the Place",
 			"time":"6:18",
 			"picture":"pics/all_over_the_place.jpg",
-			"url":"https://www.youtube.com/watch?v=5JMevM2rjsI",
+			"url":"5JMevM2rjsI",
 			"date":2012
 		},
 		{
@@ -184,7 +184,7 @@
 			"album":"Who Let the Cats Out",
 			"time":"7:57",
 			"picture":"pics/who_let_the_cats_out.jpg",
-			"url":"https://www.youtube.com/watch?v=IqpSvK1Vers",
+			"url":"IqpSvK1Vers",
 			"date":2006		
 		},
 
@@ -194,7 +194,7 @@
 			"album":"Time In Place",
 			"time":"6:04",
 			"picture":"pics/time_in_place.jpg",
-			"url":"https://www.youtube.com/watch?v=qGkA3doBMZM",
+			"url":"qGkA3doBMZM",
 			"date":2005
 		},
 		{
@@ -203,7 +203,7 @@
 			"album":"Big Neighborhood",
 			"time":"7:35",
 			"picture":"pics/big_neighborhood.jpg",
-			"url":"https://www.youtube.com/watch?v=danAY7zuZBU",
+			"url":"danAY7zuZBU",
 			"date":2009
 		},
 		{
@@ -212,25 +212,25 @@
 			"album":"Paris Concert",
 			"time":"1:20:19",
 			"picture":"pics/paris_concert.jpg",
-			"url":"https://www.youtube.com/watch?v=pKumdjSkaec",
+			"url":"pKumdjSkaec",
 			"date":2011
 		}
 				]
 	},
 	
 	"artist5":{
-	"id":"metheny",
-	"first_name":"Pat",
-	"last_name":"Metheny",
-	"image":"pics/pat_metheny.jpg",
-	"music":[
+	 "id":"burrell",
+    "first_name":"Kenny",
+    "last_name":"Burrell",
+    "image":"pics/kenny_burrell.jpg",
+    "music":[
 		{
 			"number":1,
 			"track":"Sign Of The Season",
 			"album":"Kin",
 			"time":"10:10",
 			"picture":"pics/kin.jpg",
-			"url":"https://www.youtube.com/watch?v=xH-HQJwo0o4",
+			"url":"xH-HQJwo0o4",
 			"date":2014
 		},
 		{
@@ -239,7 +239,7 @@
 			"album":"Bright Size Life",
 			"time":"4:54",
 			"picture":"pics/bright_size_life.jpg",
-			"url":"https://www.youtube.com/watch?v=oV52_eoJCjo",
+			"url":"oV52_eoJCjo",
 			"date":2000		
 		},
 
@@ -249,7 +249,7 @@
 			"album":"Letter From Home",
 			"time":"6:26",
 			"picture":"pics/letter_from_home.jpg",
-			"url":"https://www.youtube.com/watch?v=LEGCzNFWsNM",
+			"url":"LEGCzNFWsNM",
 			"date":1989
 		},
 		{
@@ -258,7 +258,7 @@
 			"album":"First Circle",
 			"time":"9:17",
 			"picture":"pics/first_circle.jpg",
-			"url":"https://www.youtube.com/watch?v=LrHxOqMrt6M",
+			"url":"LrHxOqMrt6M",
 			"date":1984
 		},
 		{
@@ -267,7 +267,7 @@
 			"album":"Offramp",
 			"time":"8:52",
 			"picture":"pics/offramp.jpg",
-			"url":"https://www.youtube.com/watch?v=jmAgBETrIPg",
+			"url":"jmAgBETrIPg",
 			"date":1999
 		}
 				]
@@ -284,7 +284,7 @@
 			"album":"All Over the Place",
 			"time":"6:18",
 			"picture":"pics/all_over_the_place.jpg",
-			"url":"https://www.youtube.com/watch?v=5JMevM2rjsI",
+			"url":"5JMevM2rjsI",
 			"date":2012
 		},
 		{
@@ -293,7 +293,7 @@
 			"album":"Who Let the Cats Out",
 			"time":"7:57",
 			"picture":"pics/who_let_the_cats_out.jpg",
-			"url":"https://www.youtube.com/watch?v=IqpSvK1Vers",
+			"url":"IqpSvK1Vers",
 			"date":2006		
 		},
 
@@ -303,7 +303,7 @@
 			"album":"Time In Place",
 			"time":"6:04",
 			"picture":"pics/time_in_place.jpg",
-			"url":"https://www.youtube.com/watch?v=qGkA3doBMZM",
+			"url":"qGkA3doBMZM",
 			"date":2005
 		},
 		{
@@ -312,7 +312,7 @@
 			"album":"Big Neighborhood",
 			"time":"7:35",
 			"picture":"pics/big_neighborhood.jpg",
-			"url":"https://www.youtube.com/watch?v=danAY7zuZBU",
+			"url":"danAY7zuZBU",
 			"date":2009
 		},
 		{
@@ -321,7 +321,7 @@
 			"album":"Paris Concert",
 			"time":"1:20:19",
 			"picture":"pics/paris_concert.jpg",
-			"url":"https://www.youtube.com/watch?v=pKumdjSkaec",
+			"url":"pKumdjSkaec",
 			"date":2011
 		}
 				]
