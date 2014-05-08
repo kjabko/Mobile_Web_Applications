@@ -49,16 +49,17 @@ $(document).ready(function(){
 
             // variable containing pop up functionality with iframe displaying youtube video, the two variables mentioned above are used in here
             //when a particular link is clicked a set of videos matching cryteria should be pulled and appended (for example when link first
-            //is clicked, suitable videos pointed in json are pulled for and appended to every first link in each artist. The problem is
-            //that videos are pulled and appended but I can get only one link working with video poping up, it is always only first artist on top
-            //Multiple popups works fine when links are hard coded but they seems to crash when appended through script. I tried to hard code iframe 
+            //is clicked, suitable videos pointed in json are pulled for and appended to every first link in each artist). The problem is
+            //that videos are pulled and appended but I can get only one link working with video poping up, it is always the first artist on top
+            //Multiple popups works fine when links are hard coded but they seem to crash when appended through script. I tried to hard code iframe 
             //but then they don't popup but appear between appended links, dialog boxes gave me even more headache). After spending too
             //many hours trying to solve this problem I realized that I'm falling behind with other work so had to give up 
             //although I wanted to try some other things that could work. Any advice on how to append videos to links so they pop up
             //would be very appreciated. 
 
-            //at the moment all videos are appended to every first link under each artist, but only first link for first artist works
-            var videoPopup =  '<div data-role="popup" id="'+popUpLink+'"><div data-role="header"><h1>Dialog</h1></div><div class="video-container" data-role="content" data-overlay-theme="e" data-theme="c" data-tolerance="15,15" class="ui-content">'+
+            //at the moment all videos are appended to every first link under each artist, it is hard coded this way, 
+            //but only first link for first artist works
+            var videoPopup =  '<div data-role="popup" id="'+popUpLink+'"><div data-role="header"><h1>'+value.first_name+' '+value.last_name+'</h1></div><div class="video-container" data-role="content" data-overlay-theme="e" data-theme="c" data-tolerance="15,15" class="ui-content">'+
                             '<iframe type="text/html" width="640" height="390" src="http://www.youtube.com/embed/'+youtubeUrl+'?enablejsapi=1" frameborder="0"></iframe>'+
                             '</div></div>';
 
