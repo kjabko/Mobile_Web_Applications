@@ -27,8 +27,8 @@ angular.module('myModule', ['ngRoute'])
 		
 		// All data from model goes into array, it will by presented in the view
 		$scope.toDo = [
-						{item: 'sample data'},
-						{item: 'tick to delete'}
+						{item: 'the sample data'},
+						{item: 'tick off to delete'}
 					];
 
 			// Takes onsubmit events binded by ng-submit and pushes (updates) into array toDo 
@@ -53,8 +53,8 @@ angular.module('myModule', ['ngRoute'])
 			$scope.title = 'Create Urgent list';
 			
 			$scope.toDo = [
-							{item: 'sample data'},
-							{item: 'tick to delete'}
+							{item: 'the sample data'},
+							{item: 'tick off to delete'}
 						];
 
 			$scope.newToDoList = function(){
@@ -76,8 +76,8 @@ angular.module('myModule', ['ngRoute'])
 		$scope.title = 'Create Can-Wait list';
 		
 		$scope.toDo = [
-						{item: 'sample data'},
-						{item: 'tick to delete'}
+						{item: 'the sample data'},
+						{item: 'tick off to delete'}
 					];
 			
 			$scope.newToDoList = function(){
