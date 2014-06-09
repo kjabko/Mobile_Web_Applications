@@ -33,11 +33,11 @@ $(document).ready(function(){
             var array3 = value.music[3];
             var array4 = value.music[4];
 
-            var valuesForArray0 = array0.number+'. '+array0.track+' | '+array0.album+' | '+array0.date+' | '+array0.time; 
-            var valuesForArray1 = array1.number+'. '+array1.track+' | '+array1.album+' | '+array1.date+' | '+array1.time;
-            var valuesForArray2 = array2.number+'. '+array2.track+' | '+array2.album+' | '+array2.date+' | '+array2.time;
-            var valuesForArray3 = array3.number+'. '+array3.track+' | '+array3.album+' | '+array3.date+' | '+array3.time;
-            var valuesForArray4 = array4.number+'. '+array4.track+' | '+array4.album+' | '+array4.date+' | '+array4.time;
+            var valuesForArray0 = array0.number+' '+array0.track+' | '+array0.album+' | '+array0.date+' | '+array0.time; 
+            var valuesForArray1 = array1.number+' '+array1.track+' | '+array1.album+' | '+array1.date+' | '+array1.time;
+            var valuesForArray2 = array2.number+' '+array2.track+' | '+array2.album+' | '+array2.date+' | '+array2.time;
+            var valuesForArray3 = array3.number+' '+array3.track+' | '+array3.album+' | '+array3.date+' | '+array3.time;
+            var valuesForArray4 = array4.number+' '+array4.track+' | '+array4.album+' | '+array4.date+' | '+array4.time;
 
             //these two variables meant to be empty and only get value from json when appropriate link is clicked,  
             //this behaviour supposed to be controlled by conditional statement, I couldn't get conditionals working to update

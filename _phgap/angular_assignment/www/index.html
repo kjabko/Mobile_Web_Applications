@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+	<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="css/style.css" />
+		<script src="js/angular.js"></script>
+		<script src="js/angular-route.js"></script>
+    <script src="js/modules/myModule.js"></script>
+
+	 <title>Angular ToDo App</title>
+	</head>
+<body>
+  <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" ng-init="isCollapsed = true" ng-click="isCollapsed = !isCollapsed">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="brand" href="#"><i class="fa fa-html5"> Angular</i></a>
+          </div>
+          <div class="navbar-collapse" ng-class="{collapse: isCollapsed}">  <ul class="nav navbar-nav">
+              <li><a href="#"><button type="button" class="btn btn-dafault"><i class="fa fa-calendar"> ToDo</i></button></a></li>
+              <li><a href="#urgent"><button type="button" class="btn btn-dafault"><i class="fa fa-clock-o"> Urgent</i></button></a></li>
+              <li><a href="#relax"><button type="button" class="btn btn-dafault"><i class="fa fa-coffee"> Relax</i></button></a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+	
+	<div id="containter">
+		<div ng-view></div><!--gets rendered template of the current route into this page (index.html). Every time the current route changes, the included view changes with it according to the configuration of the $route service-->
+	
+  </div>
+
+  <div id="footer" class="navbar-inverse">
+      <div class="container">
+        <p class="muted credit">Handcrafted by Krzysztof Jablonski &copy; 2014</p>
+      </div>
+    </div>
+
+</body>
+</html>

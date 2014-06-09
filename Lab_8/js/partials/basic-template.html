@@ -1,0 +1,21 @@
+<div id="wrapper">
+	<div class="jumbotron text-center">
+	
+		<h1>{{title}}</h1>
+
+			<div id="form_wrapper">
+				<form id="myForm" data-ng-submit="newToDoList()">
+					<input type="text" data-ng-model="newToDo.item"/> 
+					<button id="buttonAdd"; data-ng-click="save()" class="fa fa-pencil">&nbspAdd</button>
+				</form> 
+	<button id="buttonClear" data-ng-click="clearCompleted()" class="fa fa-eraser">&nbspClear Completed</button>
+
+			</div><!--end of form_wrapper-->
+	</div><!--end of jumbotron-->
+		<ul>
+			<li data-ng-repeat="allToDo in toDo">
+			<input type="checkbox" ng-model="allToDo.done" />
+			<span ng-class="{'done':allToDo.done}">{{ allToDo.item }}</span>
+			</li>
+		</ul>
+</div><!--end of wrapper-->

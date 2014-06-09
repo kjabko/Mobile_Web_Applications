@@ -1,0 +1,40 @@
+{
+  "albums": [
+    {
+      "artist": "Buck 65",
+      "title": "Man Overboard"
+    },
+    {
+      "artist": "Daft Punk",
+      "title": "Random Access Memories"
+    }, 
+    {
+      "artist": "James Iha",
+      "title": "Let It Come Down"
+    },
+    {
+      "artist": "M Ward",
+      "title": "Transfiguration of Vincent"
+    },
+    {
+      "artist": "Chromio",
+      "title": "Fancy Footwork"
+    },
+    {
+      "artist": "Yuck",
+      "title": "Glow and Behold"
+    },
+    {
+      "artist": "Big Black",
+      "title": "Atomizer"
+    },
+    {
+      "artist": "Kid 606",
+      "title": "Happiness"
+    },
+    {
+      "artist": "Sonic Youth",
+      "title": "Daydream Nation"
+    }
+  ]
+}

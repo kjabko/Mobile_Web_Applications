@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="albumsApp">
+	<head>
+		<script src="angular.js"></script>
+		<script src="app.js"></script>
+	
+	</head>
+<body>
+<div id="container" ng-controller="albumController">
+<ul>
+	<li data-ng-repeat="album in albums">{{album.artist}} {{album.title}}</li>
+</ul>
+
+</div><!--container-->
+ 
+
+
+</body>
+</html>

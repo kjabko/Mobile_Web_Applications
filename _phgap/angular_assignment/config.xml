@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.example.angular" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>AngularApp</name>
+    <description>
+        A simple TO DO application written using AngularJS framework.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Krzysztof Jablonski
+    </author>
+    <icon src ="logo.png"/>
+    <content src="index.html" />
+    <access origin="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+</widget>

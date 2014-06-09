@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" data-ng-app="">
+<head>
+  <meta charset="utf-8">
+  <title>Angular Mobile</title>
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="app.css">
+   </head>
+<body>
+<div id="container" data-ng-controller="myController" class="col-sm-6 col-sm-offset-3">
+<form>
+First name:&nbsp<input type="text" data-ng-model="newJazzer.fname"/><br>
+Last name:&nbsp<input type="text" data-ng-model="newJazzer.lname"/><br> 
+<input type="submit" style="margin-left:190px;" data-ng-click="newJazzmen()"/>
+</form> 
+
+<ul>
+<li data-ng-repeat="allJazzmen in jazzmen">{{ allJazzmen.fname }} {{allJazzmen.lname }}</li>
+<a href="#" ng-click="delete($index)">Delete Item</a>
+
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<script src="angular.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

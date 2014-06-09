@@ -1,0 +1,27 @@
+<div id="wrapperToDo">
+	<div class="jumbotron text-center">
+	
+		<h1>{{title}}</h1><!--directive for displaying data from controller-->
+
+			<div id="form_wrapper">
+				<div class="container-fluid">
+					<div class="col-md-4 col-md-offset-4">
+						<form id="myForm" data-ng-submit="newToDoList()"><!--Binds angular expressions on onsubmit events-->
+					
+							<input type="text" name="list" data-ng-model="newToDo.item" required /><!--Binds the view into the model. ng-model defines a variable which is available on the scope. The "required" validates form-->
+					
+							<button id="buttonAdd"; data-ng-click="save()" class="fa fa-pencil"> Add</button>
+						</form> 
+					<button id="buttonClear" data-ng-click="clearCompleted()" class="fa fa-eraser"> Delete Completed</button>
+					</div>
+				</div>
+			</div><!--end of form_wrapper-->
+	</div><!--end of jumbotron-->
+		<ul>
+			<li data-ng-repeat="allToDo in toDo"><!--creates a $scope instance for every LI instance that it generated-->
+			<input type="checkbox" ng-model="allToDo.done" /><!--Bindes the view into the model. ng-model defines a variable which is available on the scope-->
+
+			<span ng-class="{'done':allToDo.done}">{{ allToDo.item }}</span><!--dynamically sets CSS class on an HTML element by databinding an expression-->
+			</li>
+		</ul>
+</div><!--end of wrapperToDo-->

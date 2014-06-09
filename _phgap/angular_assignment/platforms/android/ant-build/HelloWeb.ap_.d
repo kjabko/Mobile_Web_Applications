@@ -1,0 +1,25 @@
+X:\My_Apps\helloweb\platforms\android\ant-build\HelloWeb.ap_ \
+ : X:\My_Apps\helloweb\platforms\android\res\drawable\icon.png \
+X:\My_Apps\helloweb\platforms\android\res\drawable-hdpi\icon.png \
+X:\My_Apps\helloweb\platforms\android\res\drawable-ldpi\icon.png \
+X:\My_Apps\helloweb\platforms\android\res\drawable-mdpi\icon.png \
+X:\My_Apps\helloweb\platforms\android\res\drawable-xhdpi\icon.png \
+X:\My_Apps\helloweb\platforms\android\res\values\strings.xml \
+X:\My_Apps\helloweb\platforms\android\res\xml\config.xml \
+X:\My_Apps\helloweb\platforms\android\ant-build\res\drawable\icon.png \
+X:\My_Apps\helloweb\platforms\android\ant-build\res\drawable-hdpi\icon.png \
+X:\My_Apps\helloweb\platforms\android\ant-build\res\drawable-ldpi\icon.png \
+X:\My_Apps\helloweb\platforms\android\ant-build\res\drawable-mdpi\icon.png \
+X:\My_Apps\helloweb\platforms\android\ant-build\res\drawable-xhdpi\icon.png \
+X:\My_Apps\helloweb\platforms\android\assets\www \
+X:\My_Apps\helloweb\platforms\android\assets\_where-is-www.txt \
+X:\My_Apps\helloweb\platforms\android\assets\www\cordova.js \
+X:\My_Apps\helloweb\platforms\android\assets\www\cordova_plugins.js \
+X:\My_Apps\helloweb\platforms\android\assets\www\css \
+X:\My_Apps\helloweb\platforms\android\assets\www\img \
+X:\My_Apps\helloweb\platforms\android\assets\www\index.html \
+X:\My_Apps\helloweb\platforms\android\assets\www\js \
+X:\My_Apps\helloweb\platforms\android\assets\www\css\index.css \
+X:\My_Apps\helloweb\platforms\android\assets\www\img\logo.png \
+X:\My_Apps\helloweb\platforms\android\assets\www\js\index.js \
+X:\My_Apps\helloweb\platforms\android\ant-build\AndroidManifest.xml \
